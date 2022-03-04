@@ -39,9 +39,11 @@
             <input type="text" name="text" placeholder="enter the task"><br>
             <button type="submit">Submit</button>
         </form>
+        {% for message in messages %}
         <div class="messages">
-            <h3>successfully added</h3>
+            <h3>{{message}}</h3>
         </div>
+        {% endfor %}
     </div>
 
     

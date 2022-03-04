@@ -1,7 +1,8 @@
 {% for works in work reversed %}
+<a href="/detail/{{works.id}}">
 <div class="alltask">
     <ul>
         <li>{{works}}</li>
     </ul>
-</div>
+</div></a>
 {% endfor %}
